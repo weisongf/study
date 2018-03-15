@@ -1,0 +1,15 @@
+[DEFAULT]
+ceph_osd_members = 172.23.47.41,172.23.47.42,172.23.47.43,172.23.47.58,172.23.47.60,172.23.47.62
+ceph_deploy_ip = 172.23.47.41
+ceph_manageips = 172.23.4.41,172.23.4.42,172.23.4.43,172.23.4.58,172.23.4.59,172.23.4.60
+ceph_members = 172.23.47.41,172.23.47.42,172.23.47.43,172.23.47.60,172.23.47.58,172.23.47.62
+upstream_internal_ip = 172.23.30.44
+controller_nums = 1
+controller_manage_members = 172.23.4.44
+upstream_manage_ip = 172.23.4.44
+ceph_mon_members = 172.23.47.41,172.23.47.42,172.23.47.43,172.23.47.58,172.23.47.60
+controller_internal_members = 172.23.30.44
+ceph_mon_add_members =
+ceph_osd_add_members = 172.23.47.58,172.23.47.60,172.23.47.62
+ceph_deploy_manageip = 172.23.4.41
+ceph_manageips_add = 172.23.4.58,172.23.4.59,172.23.4.60

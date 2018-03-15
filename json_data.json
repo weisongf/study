@@ -1,0 +1,65 @@
+{
+ "server_id":"1a14025d-cf26-4bbb-b27a-e3496e245806",
+ "host":{
+       "hostname":"controller1",
+       "ntp_server_ip":"172.23.30.77"
+        },
+ "components":{
+       "enable_services":"db,rabbitmq,keystone,glance,nova,neutron,cinder"
+              },
+ "role":{
+       "role_type":"controller"
+              },
+  "network":{
+        "bond_enable":"yes",
+        "bond_mode":"1",
+        "manage_vlanid":"100",
+        "manage_nicname":"eth0",
+        "manage_bondname":"bondadmin",
+        "manage_nicname1":"eth0",
+        "manage_nicname2":"eth1",
+        "manage_ip":"172.23.30.69 ",
+        "manage_netmask":"255.255.255.0",
+        "manage_gateway":"172.23.30.254",
+        "internal_vlanid":"2000",
+        "internal_nicname":"eth2",
+        "internal_bondname":"bondinternal",
+        "internal_nicname1":"eth2",
+        "internal_nicname2":"eth3",
+        "internal_ip":"10.10.0.11 ",
+        "internal_netmask":"255.255.255.0",
+        "bussiness_nicname":"eth4",
+        "bussiness_bondname":"bondbussiness",
+        "bussiness_nicname1":"eth4",
+        "bussiness_nicname2":"eth5",
+        "storage_nicname":"eth6",
+        "storage_bondname":"bondstorage",
+        "storage_nicname1":"eth6",
+        "storage_nicname2":"eth7",
+        "storage_ip":"20.10.0.10",
+        "storage_netmask":"255.255.255.0"
+
+              },
+  "keystone":{
+        "endpoint_ip":"172.23.30.69"
+              },
+  "nova":{
+
+              },
+  "neutron":{
+        "neutron_mode":"self",
+        "neutron_type":"vxlan,vlan"
+              },
+  "cinder":{
+
+              },
+  "ceph":{
+
+              },
+  "ha":{
+        "enable_ha":"no",
+        "controller_nums":"1",
+        "controller_members":"172.23.30.69",
+        "controller_internal_vip":""
+              }
+}

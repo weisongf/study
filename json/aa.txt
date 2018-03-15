@@ -1,0 +1,363 @@
+---
+environ:
+  environid: '123456'
+  environname: name
+  netmode: self
+  nettype: vxlan
+  openstack_version: Mitaka
+  bondmode: '1'
+  bondenabled: true
+  haenabled: true
+  nodes:
+  - serverid: '123452'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6171
+    serialnum: '12361242'
+    hostname: host-172-23-30-69
+    ntp_server_ip: 172.23.30.77
+    type: controller
+    component: db,rabbitmq,keystone,glance-api,glance-registry,nova-api,nova-conductor,nova-consoleauth,nova-novncproxy,nova-scheduler,neutron-server,cinder-api,cinder-scheduler,cinder-volume
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.69
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.50
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.23
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123453'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6172
+    serialnum: '12361243'
+    hostname: host-172-23-30-70
+    ntp_server_ip: 172.23.30.77
+    type: network,compute
+    component: neutron-metadata-agent,neutron-dhcp-agent,neutron-l3-agent,neutron-openvswitch-agent,nova-compute
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.70
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.46
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.19
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123454'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6173
+    serialnum: '12361243'
+    hostname: host-172-23-30-71
+    ntp_server_ip: 172.23.30.77
+    type: network,compute
+    component: neutron-metadata-agent,neutron-dhcp-agent,neutron-l3-agent,neutron-openvswitch-agent,nova-compute
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.71
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.47
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.20
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123455'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6174
+    serialnum: '12361243'
+    hostname: host-172-23-30-72
+    ntp_server_ip: 172.23.30.77
+    type: compute
+    component: nova-compute,neutron-openvswitch-agent
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.72
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.48
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.21
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123456'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6175
+    serialnum: '12361243'
+    hostname: host-172-23-30-73
+    ntp_server_ip: 172.23.30.77
+    type: compute
+    component: nova-compute,neutron-openvswitch-agent
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.73
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.49
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.22
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123457'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6176
+    serialnum: '12361243'
+    hostname: host-172-23-30-74
+    ntp_server_ip: 172.23.30.77
+    type: storage
+    component: ceph-mon,ceph-osd
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.74
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.51
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.24
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123458'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6177
+    serialnum: '12361243'
+    hostname: host-172-23-30-75
+    ntp_server_ip: 172.23.30.77
+    type: storage
+    component: ceph-mon,ceph-osd
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.75
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.52
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.25
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
+  - serverid: '123459'
+    uuid: 6b2bfd88-3b29-4e42-af60-5f5892be6178
+    serialnum: '12361243'
+    hostname: host-172-23-30-76
+    ntp_server_ip: 172.23.30.77
+    type: storage
+    component: ceph-mon,ceph-osd
+    managevip: 172.23.30.100
+    intervip: 172.23.47.100
+    userid: liangdong.@inspur.com
+    ctime: '2017-11-08 13:14:13'
+    nicbond:
+    - bondname: bondadmin
+      nic1: eth0
+      nic2: eth2
+      netflag: admin
+      ip: 172.23.30.76
+      netmask: 255.255.255.0
+      gateway: 172.23.30.254
+      vlanid: '312'
+    - bondname: bondinternal
+      nic1: eth1
+      nic2: eth2
+      netflag: internaladmin
+      ip: 172.23.47.53
+      netmask: 255.255.255.0
+      gateway: 172.23.47.254
+      vlanid: '313'
+    - bondname: bondbusiness
+      nic1: eth1
+      nic2: eth6
+      netflag: business
+      ip: ''
+      netmask: 255.255.255.0
+      gateway: 1.1.2.254
+      vlanid: '101'
+    - bondname: bondstorage
+      nic1: eth2
+      nic2: eth8
+      netflag: storage
+      ip: 172.23.48.26
+      netmask: 255.255.255.0
+      gateway: 172.23.48.254
+      vlanid: '102'
